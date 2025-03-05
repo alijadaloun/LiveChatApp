@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiveChatApp", "LiveChatApp\LiveChatApp.csproj", "{1C69E2CB-2B3F-4EFB-BEBB-BD4C2766F480}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SenderMS", "SenderMS", "{5F494637-34CE-43B4-B5CD-83DFB41C98F2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RecieverMS", "RecieverMS", "{87FFFD7D-3F3E-4CDD-BBD5-DD0893A12AF8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{294515BA-C5F0-4267-8DAC-04417E5AA592}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication2", "WebApplication2\WebApplication2.csproj", "{D5B31A8D-F436-47D2-91A3-F03A06CE42F3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1C69E2CB-2B3F-4EFB-BEBB-BD4C2766F480}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C69E2CB-2B3F-4EFB-BEBB-BD4C2766F480}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C69E2CB-2B3F-4EFB-BEBB-BD4C2766F480}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C69E2CB-2B3F-4EFB-BEBB-BD4C2766F480}.Release|Any CPU.Build.0 = Release|Any CPU
+		{294515BA-C5F0-4267-8DAC-04417E5AA592}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{294515BA-C5F0-4267-8DAC-04417E5AA592}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{294515BA-C5F0-4267-8DAC-04417E5AA592}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{294515BA-C5F0-4267-8DAC-04417E5AA592}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5B31A8D-F436-47D2-91A3-F03A06CE42F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5B31A8D-F436-47D2-91A3-F03A06CE42F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5B31A8D-F436-47D2-91A3-F03A06CE42F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5B31A8D-F436-47D2-91A3-F03A06CE42F3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{294515BA-C5F0-4267-8DAC-04417E5AA592} = {5F494637-34CE-43B4-B5CD-83DFB41C98F2}
+		{D5B31A8D-F436-47D2-91A3-F03A06CE42F3} = {87FFFD7D-3F3E-4CDD-BBD5-DD0893A12AF8}
+	EndGlobalSection
+EndGlobal
