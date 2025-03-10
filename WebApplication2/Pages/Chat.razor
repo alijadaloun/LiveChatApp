@@ -1,0 +1,39 @@
+@page "/receiver"
+@using Microsoft.AspNetCore.SignalR.Client
+@inject NavigationManager Navigation
+
+<h2>Receiver Page</h2>
+<h3>Received Messages</h3>
+<div>
+    @foreach (var msg in Messages)
+    {
+        <p><strong>@msg.User:</strong> @msg.Text</p>
+    }
+</div>
+
+@code {
+    private HubConnection hubConnection;
+    private List<ChatMessage> Messages = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        hubConnection = new HubConnectionBuilder()
+            .WithUrl("http://localhost:5051/chathub")
+            .WithAutomaticReconnect()
+            .Build();
+
+        hubConnection.On<string, string>("ReceiveMessage", (user, message) =>
+        {
+            Messages.Add(new ChatMessage { User = user, Text = message });
+            InvokeAsync(StateHasChanged);
+        });
+
+        await hubConnection.StartAsync();
+    }
+
+    private class ChatMessage
+    {
+        public string User { get; set; }
+        public string Text { get; set; }
+    }
+}

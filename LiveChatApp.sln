@@ -10,6 +10,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebAppli
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication2", "WebApplication2\WebApplication2.csproj", "{D5B31A8D-F436-47D2-91A3-F03A06CE42F3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatApp", "ChatApp\ChatApp.csproj", "{A24010CF-52A7-443F-93D2-F7C7B54C2F84}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -28,6 +30,10 @@ Global
 		{D5B31A8D-F436-47D2-91A3-F03A06CE42F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D5B31A8D-F436-47D2-91A3-F03A06CE42F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D5B31A8D-F436-47D2-91A3-F03A06CE42F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A24010CF-52A7-443F-93D2-F7C7B54C2F84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A24010CF-52A7-443F-93D2-F7C7B54C2F84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A24010CF-52A7-443F-93D2-F7C7B54C2F84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A24010CF-52A7-443F-93D2-F7C7B54C2F84}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{294515BA-C5F0-4267-8DAC-04417E5AA592} = {5F494637-34CE-43B4-B5CD-83DFB41C98F2}

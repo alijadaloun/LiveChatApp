@@ -1,0 +1,34 @@
+@page "/sender"
+@using Microsoft.AspNetCore.SignalR.Client
+@inject NavigationManager Navigation
+
+<h2>Sender Page</h2>
+<input @bind="User" placeholder="Your Name" />
+<input @bind="Message" placeholder="Your Message" />
+<button @onclick="SendMessage">Send</button>
+
+@code {
+    private HubConnection hubConnection;
+    private string User = "";
+    private string Message = "";
+
+    protected override async Task OnInitializedAsync()
+    {
+        
+        hubConnection = new HubConnectionBuilder()
+            .WithUrl("http://localhost:5051/chathub")
+            .WithAutomaticReconnect()
+            .Build();
+
+        await hubConnection.StartAsync();
+    }
+
+    private async Task SendMessage()
+    {
+        
+            Console.WriteLine("Send button clicked!");
+            await hubConnection.SendAsync("SendMessage", User, Message);
+            Message = string.Empty;
+        
+    }
+}
